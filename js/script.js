@@ -34,3 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+fetch("/api/salom")
+  .then(res => res.json())
+  .then(data => {
+    console.log(data.message); // "Salom frontend!"
+  });
